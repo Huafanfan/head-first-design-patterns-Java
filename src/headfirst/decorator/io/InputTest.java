@@ -13,7 +13,7 @@ public class InputTest {
         int c;
 
         try {
-            InputStream in = new LowerCaseInputStream(new BufferedInputStream(new FileInputStream("/Users/Gavin/IdeaProjects/head-first-design-patterns-Java/LICENSE")));
+            InputStream in = new LowerCaseInputStream(new BufferedInputStream(new FileInputStream("/Users/alex/IdeaProjects/head-first-design-patterns-Java/LICENSE")));
 
             while ((c = in.read()) >= 0){
                 System.out.print((char)c);

@@ -4,6 +4,7 @@ package headfirst.factory.pizzaaf;
  * Created by Gavin on 2017/3/9.
  */
 public class NYPizzaStore extends PizzaStore {
+    @Override
     protected Pizza createPizza(String item) {
         Pizza pizza = null;
         PizzaIngredientFactory ingredientFactory =

@@ -3,7 +3,7 @@ package headfirst.factory.pizzas;
 /**
  * Created by Gavin on 2017/3/9.
  */
-public class PizzaStore {
+public class  PizzaStore {
     SimplePizzaFactory factory;
 
     public PizzaStore(SimplePizzaFactory factory) {

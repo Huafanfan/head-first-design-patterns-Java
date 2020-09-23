@@ -8,6 +8,7 @@ public class Decaf extends Beverage {
         description = "Decaf Coffee";
     }
 
+    @Override
     public double cost() {
         return 1.05;
     }

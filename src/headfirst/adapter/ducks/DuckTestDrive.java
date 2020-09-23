@@ -1,6 +1,5 @@
 package headfirst.adapter.ducks;
 
-import com.sun.tools.doclets.formats.html.SourceToHTMLConverter;
 
 /**
  * Created by Gavin on 2017/3/16.

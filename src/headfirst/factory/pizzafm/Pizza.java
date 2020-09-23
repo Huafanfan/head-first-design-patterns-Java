@@ -1,6 +1,5 @@
 package headfirst.factory.pizzafm;
 
-import com.sun.xml.internal.ws.api.streaming.XMLStreamReaderFactory;
 
 import java.util.ArrayList;
 
@@ -39,6 +38,7 @@ public abstract class Pizza {
         return name;
     }
 
+    @Override
     public String toString() {
         StringBuffer display = new StringBuffer();
         display.append("---- " + name + " ----\n");

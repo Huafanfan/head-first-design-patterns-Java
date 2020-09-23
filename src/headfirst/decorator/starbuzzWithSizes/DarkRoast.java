@@ -8,6 +8,7 @@ public class DarkRoast extends Beverage {
         description = "Dark Roast Coffee";
     }
 
+    @Override
     public double cost() {
         return .99;
     }
