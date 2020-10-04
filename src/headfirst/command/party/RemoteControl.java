@@ -1,5 +1,8 @@
 package headfirst.command.party;
 
+import java.util.Arrays;
+import java.util.Objects;
+
 //
 // This is the invoker
 //
@@ -48,5 +51,27 @@ public class RemoteControl {
 		}
 		stringBuff.append("[undo] " + undoCommand.getClass().getName() + "\n");
 		return stringBuff.toString();
+	}
+
+	@Override
+	public boolean equals(Object o) {
+		if (this == o) {
+			return true;
+		}
+		if (o == null || getClass() != o.getClass()) {
+			return false;
+		}
+		RemoteControl that = (RemoteControl) o;
+		return Arrays.equals(onCommands, that.onCommands) &&
+				Arrays.equals(offCommands, that.offCommands) &&
+				Objects.equals(undoCommand, that.undoCommand);
+	}
+
+	@Override
+	public int hashCode() {
+		int result = Objects.hash(undoCommand);
+		result = 31 * result + Arrays.hashCode(onCommands);
+		result = 31 * result + Arrays.hashCode(offCommands);
+		return result;
 	}
 }
